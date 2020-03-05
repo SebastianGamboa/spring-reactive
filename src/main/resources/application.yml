@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles: dev
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+    username: root
+    password: Dev9182
+
+name: flux-example
+enviroment: dev
+
+---
+
+spring:
+  profiles: test
+name: flux-example
+enviroment: test
